@@ -1,0 +1,585 @@
+51731 execve("/usr/bin/bash", ["bash", "../delete_files.sh", ".log", "7"], 0x7ffd14e0dce8 /* 55 vars */) = 0
+51731 brk(NULL)                         = 0x56527e0a8000
+51731 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+51731 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=82771, ...}) = 0
+51731 mmap(NULL, 82771, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f8fbd5c8000
+51731 close(3</etc/ld.so.cache>)        = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libtinfo.so.6.6>
+51731 read(3</usr/lib64/libtinfo.so.6.6>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\323\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\245O\1\0\0\0\0\0\245O\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0P\1\0\0\0\0\0\0P\1\0\0\0\0\0\0P\1\0\0\0\0\0\20.\1\0\0\0\0\0\20.\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\20\207\2\0\0\0\0\0\20\207\2\0\0\0\0\0\20\207\2\0\0\0\0\0p=\0\0\0\0\0\0\360A\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0\310\266\2\0\0\0\0\0\310\266\2\0\0\0\0\0\310\266\2\0\0\0\0\0 \2\0\0\0\0\0\0 \2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\250\2\0\0"..., 832) = 832
+51731 fstat(3</usr/lib64/libtinfo.so.6.6>, {st_mode=S_IFREG|0755, st_size=187232, ...}) = 0
+51731 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fbd5c6000
+51731 mmap(NULL, 182528, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libtinfo.so.6.6>, 0) = 0x7f8fbd599000
+51731 mmap(0x7f8fbd5ae000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libtinfo.so.6.6>, 0x15000) = 0x7f8fbd5ae000
+51731 mmap(0x7f8fbd5c1000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libtinfo.so.6.6>, 0x28000) = 0x7f8fbd5c1000
+51731 close(3</usr/lib64/libtinfo.so.6.6>) = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc.so.6>
+51731 read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\316%\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0D\0C\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0"..., 832) = 832
+51731 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51731 fstat(3</usr/lib64/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+51731 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51731 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0) = 0x7f8fbd3a0000
+51731 mmap(0x7f8fbd512000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x172000) = 0x7f8fbd512000
+51731 mmap(0x7f8fbd58b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x1eb000) = 0x7f8fbd58b000
+51731 mmap(0x7f8fbd591000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8fbd591000
+51731 close(3</usr/lib64/libc.so.6>)    = 0
+51731 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8fbd39d000
+51731 arch_prctl(ARCH_SET_FS, 0x7f8fbd39d740) = 0
+51731 set_tid_address(0x7f8fbd39dd68)   = 51731
+51731 set_robust_list(0x7f8fbd39da20, 24) = 0
+51731 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+51731 mprotect(0x7f8fbd58b000, 16384, PROT_READ) = 0
+51731 mprotect(0x7f8fbd5c1000, 16384, PROT_READ) = 0
+51731 mprotect(0x56527ae3f000, 16384, PROT_READ) = 0
+51731 mprotect(0x7f8fbd61c000, 8192, PROT_READ) = 0
+51731 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+51731 getrandom("\x19\x74\xbe\x46\x72\xc0\x94\x7c", 8, GRND_NONBLOCK) = 8
+51731 munmap(0x7f8fbd5c8000, 82771)     = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/dev/tty", O_RDWR|O_NONBLOCK) = 3</dev/tty>
+51731 close(3</dev/tty>)                = 0
+51731 brk(NULL)                         = 0x56527e0a8000
+51731 brk(0x56527e0c9000)               = 0x56527e0c9000
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+51731 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=233380912, ...}) = 0
+51731 mmap(NULL, 233380912, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7f8faf400000
+51731 close(3</usr/lib/locale/locale-archive>) = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib64/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/gconv/gconv-modules.cache>
+51731 fstat(3</usr/lib64/gconv/gconv-modules.cache>, {st_mode=S_IFREG|0644, st_size=27012, ...}) = 0
+51731 mmap(NULL, 27012, PROT_READ, MAP_SHARED, 3</usr/lib64/gconv/gconv-modules.cache>, 0) = 0x7f8fbd5d6000
+51731 close(3</usr/lib64/gconv/gconv-modules.cache>) = 0
+51731 futex(0x7f8fbd5906ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+51731 getresuid([1000], [1000], [1000]) = 0
+51731 getresgid([1000], [1000], [1000]) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+51731 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 uname({sysname="Linux", nodename="fedora", ...}) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home", {st_mode=S_IFDIR|0755, st_size=10, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya", {st_mode=S_IFDIR|0700, st_size=904, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects", {st_mode=S_IFDIR|0755, st_size=120, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects/laboratory_works_asd_2_sem", {st_mode=S_IFDIR|0755, st_size=172, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash", {st_mode=S_IFDIR|0755, st_size=56, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash", {st_mode=S_IFDIR|0755, st_size=56, ...}, 0) = 0
+51731 getpid()                          = 51731
+51731 getppid()                         = 51729
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/.local/bin/bash", 0x7ffe1be94980, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/bin/bash", 0x7ffe1be94980, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/local/bin/bash", 0x7ffe1be94980, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1551104, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1551104, ...}, 0) = 0
+51731 geteuid()                         = 1000
+51731 getegid()                         = 1000
+51731 getuid()                          = 1000
+51731 getgid()                          = 1000
+51731 access("/usr/bin/bash", X_OK)     = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1551104, ...}, 0) = 0
+51731 geteuid()                         = 1000
+51731 getegid()                         = 1000
+51731 getuid()                          = 1000
+51731 getgid()                          = 1000
+51731 access("/usr/bin/bash", R_OK)     = 0
+51731 getpid()                          = 51731
+51731 getppid()                         = 51729
+51731 getpid()                          = 51731
+51731 getppid()                         = 51729
+51731 getpgrp()                         = 51729
+51731 ioctl(2</dev/pts/0>, TIOCGPGRP, [51729]) = 0
+51731 rt_sigaction(SIGCHLD, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=62557, rlim_max=62557}) = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3</usr/share/locale/locale.alias>
+51731 fstat(3</usr/share/locale/locale.alias>, {st_mode=S_IFREG|0644, st_size=2998, ...}) = 0
+51731 read(3</usr/share/locale/locale.alias>, "# Locale name alias data base.\n# Copyright (C) 1996-2026 Free Software Foundation, Inc.\n#\n# This program is free software; you can redistribute it and/or modify\n# it under the terms of the GNU General Public License as published by\n# the Free Software Foundation; either version 2, or (at your option"..., 4096) = 2998
+51731 read(3</usr/share/locale/locale.alias>, "", 4096) = 0
+51731 close(3</usr/share/locale/locale.alias>) = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU.utf8/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru.UTF-8/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru.utf8/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru/LC_MESSAGES/bash.mo", O_RDONLY) = 3</usr/share/locale/ru/LC_MESSAGES/bash.mo>
+51731 fstat(3</usr/share/locale/ru/LC_MESSAGES/bash.mo>, {st_mode=S_IFREG|0644, st_size=105270, ...}) = 0
+51731 mmap(NULL, 105270, PROT_READ, MAP_PRIVATE, 3</usr/share/locale/ru/LC_MESSAGES/bash.mo>, 0) = 0x7f8fbd383000
+51731 close(3</usr/share/locale/ru/LC_MESSAGES/bash.mo>) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "../delete_files.sh", O_RDONLY) = 3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "../delete_files.sh", {st_mode=S_IFREG|0644, st_size=1008, ...}, 0) = 0
+51731 ioctl(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, TCGETS2, 0x7ffe1be94ce0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51731 lseek(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, 0, SEEK_CUR) = 0
+51731 read(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, "#!/bin/bash\n\nif [ $# -ne 2 ]; then\n    echo \"\320\230\321\201\320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\320\275\320\270\320\265: $0 <\321\201\321", 80) = 80
+51731 lseek(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, 0, SEEK_SET) = 0
+51731 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=512*1024}) = 0
+51731 fcntl(255, F_GETFD)               = -1 EBADF (Неправильный дескриптор файла)
+51731 dup2(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, 255) = 255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>
+51731 close(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>) = 0
+51731 fcntl(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, F_SETFD, FD_CLOEXEC) = 0
+51731 fcntl(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, F_GETFL) = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+51731 fstat(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, {st_mode=S_IFREG|0644, st_size=1008, ...}) = 0
+51731 lseek(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, 0, SEEK_CUR) = 0
+51731 read(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, "#!/bin/bash\n\nif [ $# -ne 2 ]; then\n    echo \"\320\230\321\201\320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\320\275\320\270\320\265: $0 <\321\201\321\203\321\204\321\204\320\270\320\272\321\201> <\320\264\320\275\320\265\320\271>\"\n    echo \"\320\237\321\200\320\270\320\274\320\265\321\200: $0 .log 30\"\n    exit 1\nfi\n\nSUFFIX=$1\nDAYS=$2\n\nif ! [[ \"$DAYS\" =~ ^[0-9]+$ ]]; then\n    echo \"\320\236\321\210\320\270\320\261\320\272\320\260: \320\272\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\264\320\275\320\265\320\271 \320\264\320\276\320\273\320\266\320\275\320\276 \320\261\321\213\321\202\321\214 \321\206\320\265\320\273\321\213\320\274 \321"..., 1008) = 1008
+51731 fstat(1</dev/pts/0>, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+51731 write(1</dev/pts/0>, "\320\230\321\211\320\265\320\274 \321\204\320\260\320\271\320\273\321\213 *.log, \320\272 \320\272\320\276\321\202\320\276\321\200\321\213\320\274 \320\275\320\265 \320\276\320\261\321\200\320\260\321\211\320\260\320\273\320\270\321\201\321\214 \320\261\320\276\320\273\320\265\320\265 7 \320\264\320\275\320\265\320\271...\n", 96) = 96
+51731 write(1</dev/pts/0>, "\n", 1)     = 1
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 pipe2([3<pipe:[975320]>, 4<pipe:[975320]>], 0) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+51731 lseek(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, -498, SEEK_CUR) = 510
+51731 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+51731 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8fbd39da10) = 51732
+51731 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD] <unfinished ...>
+51732 set_robust_list(0x7f8fbd39da20, 24 <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51732 <... set_robust_list resumed>)    = 0
+51731 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51732 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD] <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51732 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51731 rt_sigaction(SIGCHLD, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 getpid( <unfinished ...>
+51731 close(4<pipe:[975320]> <unfinished ...>
+51732 <... getpid resumed>)             = 51732
+51731 <... close resumed>)              = 0
+51731 rt_sigprocmask(SIG_BLOCK, [INT] <unfinished ...>
+51732 close(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh> <unfinished ...>
+51731 <... rt_sigprocmask resumed>, [], 8) = 0
+51732 <... close resumed>)              = 0
+51731 read(3<pipe:[975320]> <unfinished ...>
+51732 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51732 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGCHLD, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGINT, {sa_handler=0x56527ad4c2c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 dup2(4<pipe:[975320]>, 1</dev/pts/0>) = 1<pipe:[975320]>
+51732 close(4<pipe:[975320]>)           = 0
+51732 close(3<pipe:[975320]>)           = 0
+51732 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/.local/bin/find", 0x7ffe1be94050, 0) = -1 ENOENT (Нет такого файла или каталога)
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/bin/find", 0x7ffe1be94050, 0) = -1 ENOENT (Нет такого файла или каталога)
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/local/bin/find", 0x7ffe1be94050, 0) = -1 ENOENT (Нет такого файла или каталога)
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=213448, ...}, 0) = 0
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=213448, ...}, 0) = 0
+51732 geteuid()                         = 1000
+51732 getegid()                         = 1000
+51732 getuid()                          = 1000
+51732 getgid()                          = 1000
+51732 access("/usr/bin/find", X_OK)     = 0
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/find", {st_mode=S_IFREG|0755, st_size=213448, ...}, 0) = 0
+51732 geteuid()                         = 1000
+51732 getegid()                         = 1000
+51732 getuid()                          = 1000
+51732 getgid()                          = 1000
+51732 access("/usr/bin/find", R_OK)     = 0
+51732 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad4c2c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51732 execve("/usr/bin/find", ["find", ".", "-name", "*.log", "-atime", "+7", "-type", "f"], 0x56527e0c0ba0 /* 55 vars */) = 0
+51732 brk(NULL)                         = 0x56134331e000
+51732 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+51732 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=82771, ...}) = 0
+51732 mmap(NULL, 82771, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f17605e5000
+51732 close(3</etc/ld.so.cache>)        = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libselinux.so.1>
+51732 read(3</usr/lib64/libselinux.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360'\3\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\275\35\2\0\0\0\0\0\275\35\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \2\0\0\0\0\0\0 \2\0\0\0\0\0\0 \2\0\0\0\0\0L\334\0\0\0\0\0\0L\334\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\330\6\3\0\0\0\0\0\330\6\3\0\0\0\0\0\330\6\3\0\0\0\0\0\210\t\0\0\0\0\0\0\370.\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0\250\7\3\0\0\0\0\0\250\7\3\0\0\0\0\0\250\7\3\0\0\0\0\0`\2\0\0\0\0\0\0`\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\340\2\0\0"..., 832) = 832
+51732 fstat(3</usr/lib64/libselinux.so.1>, {st_mode=S_IFREG|0755, st_size=209008, ...}) = 0
+51732 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f17605e3000
+51732 mmap(NULL, 210384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libselinux.so.1>, 0) = 0x7f17605af000
+51732 mmap(0x7f17605d1000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libselinux.so.1>, 0x22000) = 0x7f17605d1000
+51732 mmap(0x7f17605df000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libselinux.so.1>, 0x30000) = 0x7f17605df000
+51732 mmap(0x7f17605e1000, 5584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f17605e1000
+51732 close(3</usr/lib64/libselinux.so.1>) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libm.so.6>
+51732 read(3</usr/lib64/libm.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\08\223\21\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0 \0\37\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\251\351\10\0\0\0\0\0\251\351\10\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\360\10\0\0\0\0\0\0\360\10\0\0\0\0\0\0\360\10\0\0\0\0\0\200Q\10\0\0\0\0\0\200Q\10\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\200K\21\0\0\0\0\0\200[\21\0\0\0\0\0\200[\21\0\0\0\0\0\204\4\0\0\0\0\0\0\220\4\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0\230K\21\0\0\0\0\0\230[\21\0\0\0\0\0\230[\21\0\0\0\0\0\220\2\0\0\0\0\0\0\220\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\250\2\0\0"..., 832) = 832
+51732 fstat(3</usr/lib64/libm.so.6>, {st_mode=S_IFREG|0755, st_size=1153848, ...}) = 0
+51732 mmap(NULL, 1138704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libm.so.6>, 0) = 0x7f1760498000
+51732 mmap(0x7f1760527000, 548864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libm.so.6>, 0x8f000) = 0x7f1760527000
+51732 mmap(0x7f17605ad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libm.so.6>, 0x114000) = 0x7f17605ad000
+51732 close(3</usr/lib64/libm.so.6>)    = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc.so.6>
+51732 read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\316%\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0D\0C\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0"..., 832) = 832
+51732 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51732 fstat(3</usr/lib64/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+51732 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51732 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0) = 0x7f176029f000
+51732 mmap(0x7f1760411000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x172000) = 0x7f1760411000
+51732 mmap(0x7f176048a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x1eb000) = 0x7f176048a000
+51732 mmap(0x7f1760490000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1760490000
+51732 close(3</usr/lib64/libc.so.6>)    = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libpcre2-8.so.0.15.0>
+51732 read(3</usr/lib64/libpcre2-8.so.0.15.0>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\5\v\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\t\10\0\0\0\0\0\1\t\10\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\20\10\0\0\0\0\0\0\20\10\0\0\0\0\0\0\20\10\0\0\0\0\0\344\323\2\0\0\0\0\0\344\323\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\220\352\n\0\0\0\0\0\220\372\n\0\0\0\0\0\220\372\n\0\0\0\0\0h\6\0\0\0\0\0\0H\7\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0@\354\n\0\0\0\0\0@\374\n\0\0\0\0\0@\374\n\0\0\0\0\0@\2\0\0\0\0\0\0@\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\250\2\0\0"..., 832) = 832
+51732 fstat(3</usr/lib64/libpcre2-8.so.0.15.0>, {st_mode=S_IFREG|0755, st_size=724280, ...}) = 0
+51732 mmap(NULL, 721368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libpcre2-8.so.0.15.0>, 0) = 0x7f17601ee000
+51732 mmap(0x7f176026f000, 188416, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpcre2-8.so.0.15.0>, 0x81000) = 0x7f176026f000
+51732 mmap(0x7f176029d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libpcre2-8.so.0.15.0>, 0xae000) = 0x7f176029d000
+51732 close(3</usr/lib64/libpcre2-8.so.0.15.0>) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libgcc_s-16-20260819.so.1>
+51732 read(3</usr/lib64/libgcc_s-16-20260819.so.1>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\220\320\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0 \0\37\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3258\2\0\0\0\0\0\3258\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0@\2\0\0\0\0\0\0@\2\0\0\0\0\0\0@\2\0\0\0\0\0\250o\0\0\0\0\0\0\250o\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\270\273\2\0\0\0\0\0\270\273\2\0\0\0\0\0\270\273\2\0\0\0\0\0H\4\0\0\0\0\0\0\20\6\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0\340\273\2\0\0\0\0\0\340\273\2\0\0\0\0\0\340\273\2\0\0\0\0\0\20\2\0\0\0\0\0\0\20\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\250\2\0\0"..., 832) = 832
+51732 fstat(3</usr/lib64/libgcc_s-16-20260819.so.1>, {st_mode=S_IFREG|0755, st_size=186512, ...}) = 0
+51732 mmap(NULL, 180680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libgcc_s-16-20260819.so.1>, 0) = 0x7f17601c1000
+51732 mmap(0x7f17601e5000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libgcc_s-16-20260819.so.1>, 0x24000) = 0x7f17601e5000
+51732 mmap(0x7f17601ec000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libgcc_s-16-20260819.so.1>, 0x2b000) = 0x7f17601ec000
+51732 mmap(0x7f17601ed000, 456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f17601ed000
+51732 close(3</usr/lib64/libgcc_s-16-20260819.so.1>) = 0
+51732 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f17601bf000
+51732 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f17601bc000
+51732 arch_prctl(ARCH_SET_FS, 0x7f17601bc840) = 0
+51732 set_tid_address(0x7f17601bce68)   = 51732
+51732 set_robust_list(0x7f17601bcb20, 24) = 0
+51732 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+51732 mprotect(0x7f176048a000, 16384, PROT_READ) = 0
+51732 mprotect(0x7f17601ec000, 4096, PROT_READ) = 0
+51732 mprotect(0x7f176029d000, 4096, PROT_READ) = 0
+51732 mprotect(0x7f17605ad000, 4096, PROT_READ) = 0
+51732 mprotect(0x7f17605df000, 4096, PROT_READ) = 0
+51732 mprotect(0x56130a43d000, 8192, PROT_READ) = 0
+51732 mprotect(0x7f1760639000, 8192, PROT_READ) = 0
+51732 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+51732 getrandom("\x73\xd9\x92\x28\x30\xe2\x93\x0f", 8, GRND_NONBLOCK) = 8
+51732 munmap(0x7f17605e5000, 82771)     = 0
+51732 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x17, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0
+51732 statfs("/sys/fs/selinux", {f_type=SELINUX_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x17, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0
+51732 brk(NULL)                         = 0x56134331e000
+51732 brk(0x56134333f000)               = 0x56134333f000
+51732 access("/etc/selinux/config", F_OK) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", O_RDONLY|O_CLOEXEC) = 3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>
+51732 uname({sysname="Linux", nodename="fedora", ...}) = 0
+51732 ioctl(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, TCGETS2, 0x7ffce18c4390) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 4</usr/lib/locale/locale-archive>
+51732 fstat(4</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=233380912, ...}) = 0
+51732 mmap(NULL, 233380912, PROT_READ, MAP_PRIVATE, 4</usr/lib/locale/locale-archive>, 0) = 0x7f1752200000
+51732 close(4</usr/lib/locale/locale-archive>) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib64/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 4</usr/lib64/gconv/gconv-modules.cache>
+51732 fstat(4</usr/lib64/gconv/gconv-modules.cache>, {st_mode=S_IFREG|0644, st_size=27012, ...}) = 0
+51732 mmap(NULL, 27012, PROT_READ, MAP_SHARED, 4</usr/lib64/gconv/gconv-modules.cache>, 0) = 0x7f17605f3000
+51732 close(4</usr/lib64/gconv/gconv-modules.cache>) = 0
+51732 futex(0x7f176048f6ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4</usr/share/locale/locale.alias>
+51732 fstat(4</usr/share/locale/locale.alias>, {st_mode=S_IFREG|0644, st_size=2998, ...}) = 0
+51732 read(4</usr/share/locale/locale.alias>, "# Locale name alias data base.\n# Copyright (C) 1996-2026 Free Software Foundation, Inc.\n#\n# This program is free software; you can redistribute it and/or modify\n# it under the terms of the GNU General Public License as published by\n# the Free Software Foundation; either version 2, or (at your option"..., 4096) = 2998
+51732 read(4</usr/share/locale/locale.alias>, "", 4096) = 0
+51732 close(4</usr/share/locale/locale.alias>) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/findutils.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU.utf8/LC_MESSAGES/findutils.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru_RU/LC_MESSAGES/findutils.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru.UTF-8/LC_MESSAGES/findutils.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru.utf8/LC_MESSAGES/findutils.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/share/locale/ru/LC_MESSAGES/findutils.mo", O_RDONLY) = 4</usr/share/locale/ru/LC_MESSAGES/findutils.mo>
+51732 fstat(4</usr/share/locale/ru/LC_MESSAGES/findutils.mo>, {st_mode=S_IFREG|0644, st_size=54481, ...}) = 0
+51732 mmap(NULL, 54481, PROT_READ, MAP_PRIVATE, 4</usr/share/locale/ru/LC_MESSAGES/findutils.mo>, 0) = 0x7f17605e5000
+51732 close(4</usr/share/locale/ru/LC_MESSAGES/findutils.mo>) = 0
+51732 ioctl(1<pipe:[975320]>, TCGETS2, 0x7ffce18c4270) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51732 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", {st_mode=S_IFDIR|0755, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51732 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>
+51732 fstat(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, {st_mode=S_IFDIR|0755, st_size=50, ...}) = 0
+51732 fcntl(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, F_GETFL) = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+51732 fcntl(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, F_SETFD, FD_CLOEXEC) = 0
+51732 fstat(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, {st_mode=S_IFDIR|0755, st_size=50, ...}) = 0
+51732 fcntl(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, F_DUPFD_CLOEXEC, 3) = 5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>
+51732 getdents64(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, 0x561343324790 /* 6 entries */, 32768) = 176
+51732 getdents64(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, 0x561343324790 /* 0 entries */, 32768) = 0
+51732 close(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>) = 0
+51732 fcntl(5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, F_DUPFD_CLOEXEC, 0) = 4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>
+51732 newfstatat(5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "a.log", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51732 fstat(1<pipe:[975320]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+51732 newfstatat(5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "b.log", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51732 newfstatat(5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "bash.log", {st_mode=S_IFREG|0644, st_size=43484, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51732 close(5</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>) = 0
+51732 close(4</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>) = 0
+51732 fchdir(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>) = 0
+51732 close(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>) = 0
+51732 write(1<pipe:[975320]>, "./a.log\n./b.log\n", 16 <unfinished ...>
+51731 <... read resumed>, "./a.log\n./b.log\n", 4096) = 16
+51732 <... write resumed>)              = 16
+51732 close(1<pipe:[975320]> <unfinished ...>
+51731 read(3<pipe:[975320]> <unfinished ...>
+51732 <... close resumed>)              = 0
+51731 <... read resumed>, "", 4096)     = 0
+51732 close(2</dev/pts/0> <unfinished ...>
+51731 close(3<pipe:[975320]> <unfinished ...>
+51732 <... close resumed>)              = 0
+51731 <... close resumed>)              = 0
+51731 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51732 exit_group(0 <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51732 <... exit_group resumed>)         = ?
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51731 rt_sigaction(SIGINT, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 wait4(-1 <unfinished ...>
+51732 +++ exited with 0 +++
+51731 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 51732
+51731 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=51732, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+51731 wait4(-1, 0x7ffe1be93654, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+51731 rt_sigreturn({mask=[]})           = 0
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 read(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, "\nif [ -z \"$FILES\" ]; then\n    echo \"\320\244\320\260\320\271\320\273\320\276\320\262 \320\275\320\265 \320\275\320\260\320\271\320\264\320\265\320\275\320\276.\"\n    exit 0\nfi\n\necho \"\320\235\320\260\320\271\320\264\320\265\320\275\321\213 \321\201\320\273\320\265\320\264\321\203\321\216\321\211\320\270\320\265 \321\204\320\260\320\271\320\273\321\213:\"\necho \"$FILES\"\necho \"\"\n\nread -p \"\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\262\321\201\320\265 \321\215\321\202\320\270 \321\204\320\260\320\271\320\273\321\213? (y/n): \" CONFIRM\n\nif [ \"$CONFIRM\" != \"y\" ]; then\n    echo \"\320\236\321\202\320\274\320\265\320\275\320\265\320\275\320\276.\"\n    exit 0"..., 1008) = 498
+51731 write(1</dev/pts/0>, "\320\235\320\260\320\271\320\264\320\265\320\275\321\213 \321\201\320\273\320\265\320\264\321\203\321\216\321\211\320\270\320\265 \321\204\320\260\320\271\320\273\321\213:\n", 46) = 46
+51731 write(1</dev/pts/0>, "./a.log\n", 8) = 8
+51731 write(1</dev/pts/0>, "./b.log\n", 8) = 8
+51731 write(1</dev/pts/0>, "\n", 1)     = 1
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+51731 ioctl(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, TCGETS2, 0x7ffe1be94730) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51731 lseek(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, 0, SEEK_CUR) = 0
+51731 read(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, "y\n", 4096) = 2
+51731 pipe2([3<pipe:[983222]>, 4<pipe:[983222]>], 0) = 0
+51731 fcntl(4<pipe:[983222]>, F_GETPIPE_SZ) = 65536
+51731 write(4<pipe:[983222]>, "./a.log\n./b.log\n", 16) = 16
+51731 close(4<pipe:[983222]>)           = 0
+51731 fcntl(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, F_GETFD) = 0
+51731 fcntl(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, F_DUPFD, 10) = 10</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>
+51731 fcntl(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, F_GETFD) = 0
+51731 fcntl(10</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, F_SETFD, FD_CLOEXEC) = 0
+51731 dup2(3<pipe:[983222]>, 0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>) = 0<pipe:[983222]>
+51731 close(3<pipe:[983222]>)           = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+51731 ioctl(0<pipe:[983222]>, TCGETS2, 0x7ffe1be945f0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51731 lseek(0<pipe:[983222]>, 0, SEEK_CUR) = -1 ESPIPE (Недопустимая операция смещения)
+51731 read(0<pipe:[983222]>, ".", 1)    = 1
+51731 read(0<pipe:[983222]>, "/", 1)    = 1
+51731 read(0<pipe:[983222]>, "a", 1)    = 1
+51731 read(0<pipe:[983222]>, ".", 1)    = 1
+51731 read(0<pipe:[983222]>, "l", 1)    = 1
+51731 read(0<pipe:[983222]>, "o", 1)    = 1
+51731 read(0<pipe:[983222]>, "g", 1)    = 1
+51731 read(0<pipe:[983222]>, "\n", 1)   = 1
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, ".", {st_mode=S_IFDIR|0755, st_size=50, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/.local/bin/rm", 0x7ffe1be94520, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/home/katya/bin/rm", 0x7ffe1be94520, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/local/bin/rm", 0x7ffe1be94520, 0) = -1 ENOENT (Нет такого файла или каталога)
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/rm", {st_mode=S_IFREG|0755, st_size=65904, ...}, 0) = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/rm", {st_mode=S_IFREG|0755, st_size=65904, ...}, 0) = 0
+51731 geteuid()                         = 1000
+51731 getegid()                         = 1000
+51731 getuid()                          = 1000
+51731 getgid()                          = 1000
+51731 access("/usr/bin/rm", X_OK)       = 0
+51731 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/bin/rm", {st_mode=S_IFREG|0755, st_size=65904, ...}, 0) = 0
+51731 geteuid()                         = 1000
+51731 getegid()                         = 1000
+51731 getuid()                          = 1000
+51731 getgid()                          = 1000
+51731 access("/usr/bin/rm", R_OK)       = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+51731 lseek(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, -68, SEEK_CUR) = 940
+51731 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+51731 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8fbd39da10) = 51733
+51731 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD] <unfinished ...>
+51733 set_robust_list(0x7f8fbd39da20, 24 <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51733 <... set_robust_list resumed>)    = 0
+51733 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD] <unfinished ...>
+51731 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51733 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51733 getpid( <unfinished ...>
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+51733 <... getpid resumed>)             = 51733
+51731 <... rt_sigprocmask resumed>, [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51733 close(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh> <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51733 <... close resumed>)              = 0
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+51733 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51731 <... rt_sigprocmask resumed>, [], 8) = 0
+51733 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51731 rt_sigaction(SIGINT, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0} <unfinished ...>
+51733 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0} <unfinished ...>
+51731 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 wait4(-1 <unfinished ...>
+51733 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51733 execve("/usr/bin/rm", ["rm", "./a.log"], 0x56527e0c1250 /* 55 vars */) = 0
+51733 brk(NULL)                         = 0x5605f3cda000
+51733 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+51733 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+51733 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=82771, ...}) = 0
+51733 mmap(NULL, 82771, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f8b90049000
+51733 close(3</etc/ld.so.cache>)        = 0
+51733 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc.so.6>
+51733 read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\316%\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0D\0C\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0"..., 832) = 832
+51733 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51733 fstat(3</usr/lib64/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+51733 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8b90047000
+51733 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51733 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0) = 0x7f8b8fe4e000
+51733 mmap(0x7f8b8ffc0000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x172000) = 0x7f8b8ffc0000
+51733 mmap(0x7f8b90039000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x1eb000) = 0x7f8b90039000
+51733 mmap(0x7f8b9003f000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8b9003f000
+51733 close(3</usr/lib64/libc.so.6>)    = 0
+51733 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8b8fe4b000
+51733 arch_prctl(ARCH_SET_FS, 0x7f8b8fe4b740) = 0
+51733 set_tid_address(0x7f8b8fe4bd68)   = 51733
+51733 set_robust_list(0x7f8b8fe4ba20, 24) = 0
+51733 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+51733 mprotect(0x7f8b90039000, 16384, PROT_READ) = 0
+51733 mprotect(0x5605bf78c000, 4096, PROT_READ) = 0
+51733 mprotect(0x7f8b9009d000, 8192, PROT_READ) = 0
+51733 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+51733 getrandom("\x0a\xdb\x7f\x94\x8a\x24\xb8\x11", 8, GRND_NONBLOCK) = 8
+51733 munmap(0x7f8b90049000, 82771)     = 0
+51733 brk(NULL)                         = 0x5605f3cda000
+51733 brk(0x5605f3cfb000)               = 0x5605f3cfb000
+51733 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+51733 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=233380912, ...}) = 0
+51733 mmap(NULL, 233380912, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7f8b81e00000
+51733 close(3</usr/lib/locale/locale-archive>) = 0
+51733 ioctl(0<pipe:[983222]>, TCGETS2, 0x7ffceb069ff0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51733 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "./a.log", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51733 unlinkat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "./a.log", 0) = 0
+51733 close(0<pipe:[983222]>)           = 0
+51733 close(1</dev/pts/0>)              = 0
+51733 close(2</dev/pts/0>)              = 0
+51733 exit_group(0)                     = ?
+51733 +++ exited with 0 +++
+51731 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 51733
+51731 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 ioctl(2</dev/pts/0>, TIOCGWINSZ, {ws_row=40, ws_col=73, ws_xpixel=0, ws_ypixel=0}) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=51733, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+51731 wait4(-1, 0x7ffe1be93954, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+51731 rt_sigreturn({mask=[]})           = 0
+51731 write(1</dev/pts/0>, "\320\243\320\264\320\260\320\273\321\221\320\275: ./a.log\n", 22) = 22
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+51731 ioctl(0<pipe:[983222]>, TCGETS2, 0x7ffe1be945f0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51731 lseek(0<pipe:[983222]>, 0, SEEK_CUR) = -1 ESPIPE (Недопустимая операция смещения)
+51731 read(0<pipe:[983222]>, ".", 1)    = 1
+51731 read(0<pipe:[983222]>, "/", 1)    = 1
+51731 read(0<pipe:[983222]>, "b", 1)    = 1
+51731 read(0<pipe:[983222]>, ".", 1)    = 1
+51731 read(0<pipe:[983222]>, "l", 1)    = 1
+51731 read(0<pipe:[983222]>, "o", 1)    = 1
+51731 read(0<pipe:[983222]>, "g", 1)    = 1
+51731 read(0<pipe:[983222]>, "\n", 1)   = 1
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [], 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, ~[], [INT TERM CHLD], 8) = 0
+51731 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f8fbd39da10) = 51734
+51731 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD] <unfinished ...>
+51734 set_robust_list(0x7f8fbd39da20, 24 <unfinished ...>
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51734 <... set_robust_list resumed>)    = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51734 rt_sigprocmask(SIG_SETMASK, [INT TERM CHLD], NULL, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51734 getpid( <unfinished ...>
+51731 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51734 <... getpid resumed>)             = 51734
+51731 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD] <unfinished ...>
+51734 close(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh> <unfinished ...>
+51731 <... rt_sigprocmask resumed>, [], 8) = 0
+51734 <... close resumed>)              = 0
+51731 rt_sigaction(SIGINT, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0} <unfinished ...>
+51734 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+51731 <... rt_sigaction resumed>, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 <... rt_sigprocmask resumed>, NULL, 8) = 0
+51731 wait4(-1 <unfinished ...>
+51734 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad1d8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51734 execve("/usr/bin/rm", ["rm", "./b.log"], 0x56527e0c2320 /* 55 vars */) = 0
+51734 brk(NULL)                         = 0x558ab6f15000
+51734 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+51734 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+51734 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=82771, ...}) = 0
+51734 mmap(NULL, 82771, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7f2a4cb53000
+51734 close(3</etc/ld.so.cache>)        = 0
+51734 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc.so.6>
+51734 read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\316%\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0D\0C\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0"..., 832) = 832
+51734 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51734 fstat(3</usr/lib64/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+51734 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2a4cb51000
+51734 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+51734 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0) = 0x7f2a4c958000
+51734 mmap(0x7f2a4caca000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x172000) = 0x7f2a4caca000
+51734 mmap(0x7f2a4cb43000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x1eb000) = 0x7f2a4cb43000
+51734 mmap(0x7f2a4cb49000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2a4cb49000
+51734 close(3</usr/lib64/libc.so.6>)    = 0
+51734 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2a4c955000
+51734 arch_prctl(ARCH_SET_FS, 0x7f2a4c955740) = 0
+51734 set_tid_address(0x7f2a4c955d68)   = 51734
+51734 set_robust_list(0x7f2a4c955a20, 24) = 0
+51734 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+51734 mprotect(0x7f2a4cb43000, 16384, PROT_READ) = 0
+51734 mprotect(0x558aae3e7000, 4096, PROT_READ) = 0
+51734 mprotect(0x7f2a4cba7000, 8192, PROT_READ) = 0
+51734 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+51734 getrandom("\x11\xaa\x42\xa2\x85\x0b\x94\xfa", 8, GRND_NONBLOCK) = 8
+51734 munmap(0x7f2a4cb53000, 82771)     = 0
+51734 brk(NULL)                         = 0x558ab6f15000
+51734 brk(0x558ab6f36000)               = 0x558ab6f36000
+51734 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+51734 fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=233380912, ...}) = 0
+51734 mmap(NULL, 233380912, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7f2a3ea00000
+51734 close(3</usr/lib/locale/locale-archive>) = 0
+51734 ioctl(0<pipe:[983222]>, TCGETS2, 0x7fff6e77d980) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51734 newfstatat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "./b.log", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+51734 unlinkat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo>, "./b.log", 0) = 0
+51734 close(0<pipe:[983222]>)           = 0
+51734 close(1</dev/pts/0>)              = 0
+51734 close(2</dev/pts/0>)              = 0
+51734 exit_group(0)                     = ?
+51734 +++ exited with 0 +++
+51731 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 51734
+51731 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, {sa_handler=0x56527ad19d80, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f8fbd3b9fb0}, 8) = 0
+51731 ioctl(2</dev/pts/0>, TIOCGWINSZ, {ws_row=40, ws_col=73, ws_xpixel=0, ws_ypixel=0}) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=51734, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+51731 wait4(-1, 0x7ffe1be93954, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+51731 rt_sigreturn({mask=[]})           = 0
+51731 write(1</dev/pts/0>, "\320\243\320\264\320\260\320\273\321\221\320\275: ./b.log\n", 22) = 22
+51731 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+51731 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+51731 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+51731 ioctl(0<pipe:[983222]>, TCGETS2, 0x7ffe1be945f0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+51731 lseek(0<pipe:[983222]>, 0, SEEK_CUR) = -1 ESPIPE (Недопустимая операция смещения)
+51731 read(0<pipe:[983222]>, "", 1)     = 0
+51731 dup2(10</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, 0<pipe:[983222]>) = 0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>
+51731 fcntl(10</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>, F_GETFD) = 0x1 (flags FD_CLOEXEC)
+51731 close(10</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/demo/cmd.txt>) = 0
+51731 read(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, "\necho \"\"\necho \"\320\223\320\276\321\202\320\276\320\262\320\276. \320\243\320\264\320\260\320\273\320\265\320\275\320\276 \321\204\320\260\320\271\320\273\320\276\320\262: ${COUNT}\"\n", 1008) = 68
+51731 write(1</dev/pts/0>, "\n", 1)     = 1
+51731 write(1</dev/pts/0>, "\320\223\320\276\321\202\320\276\320\262\320\276. \320\243\320\264\320\260\320\273\320\265\320\275\320\276 \321\204\320\260\320\271\320\273\320\276\320\262: 2\n", 45) = 45
+51731 read(255</home/katya/PycharmProjects/laboratory_works_asd_2_sem/6_lab_bash/delete_files.sh>, "", 1008) = 0
+51731 exit_group(0)                     = ?
+51731 +++ exited with 0 +++

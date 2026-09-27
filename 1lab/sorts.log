@@ -1,0 +1,102 @@
+50047 execve("./main", ["./main"], 0x7ffedbcaa8e0 /* 55 vars */) = 0
+50047 brk(NULL)                         = 0xea71000
+50047 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+50047 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+50047 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=82771, ...}) = 0
+50047 mmap(NULL, 82771, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7fcfc9593000
+50047 close(3</etc/ld.so.cache>)        = 0
+50047 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts>, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib64/libc.so.6>
+50047 read(3</usr/lib64/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\316%\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0D\0C\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0"..., 832) = 832
+50047 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+50047 fstat(3</usr/lib64/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+50047 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfc9591000
+50047 pread64(3</usr/lib64/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\0\360\33\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\36\27\0\0\0\0\0-\36\27\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\0 \27\0\0\0\0\0\10\216\7\0\0\0\0\0\10\216\7\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0x\273\36\0\0\0\0\0\20K\0\0\0\0\0\0\370\317\0\0\0\0\0\0\0\20\0\0\0\0\0\0\2\0\0\0\6\0\0\0 \351\36\0\0\0\0\0 \351\36\0"..., 784, 64) = 784
+50047 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0) = 0x7fcfc9398000
+50047 mmap(0x7fcfc950a000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x172000) = 0x7fcfc950a000
+50047 mmap(0x7fcfc9583000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib64/libc.so.6>, 0x1eb000) = 0x7fcfc9583000
+50047 mmap(0x7fcfc9589000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcfc9589000
+50047 close(3</usr/lib64/libc.so.6>)    = 0
+50047 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcfc9395000
+50047 arch_prctl(ARCH_SET_FS, 0x7fcfc9395740) = 0
+50047 set_tid_address(0x7fcfc9395d68)   = 50047
+50047 set_robust_list(0x7fcfc9395a20, 24) = 0
+50047 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+50047 mprotect(0x7fcfc9583000, 16384, PROT_READ) = 0
+50047 mprotect(0x402000, 4096, PROT_READ) = 0
+50047 mprotect(0x7fcfc95e7000, 8192, PROT_READ) = 0
+50047 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+50047 getrandom("\x2a\xb8\x23\x7b\x07\x6b\x97\x7b", 8, GRND_NONBLOCK) = 8
+50047 munmap(0x7fcfc9593000, 82771)     = 0
+50047 fstat(1</dev/pts/0>, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+50047 brk(NULL)                         = 0xea71000
+50047 brk(0xea92000)                    = 0xea92000
+50047 write(1</dev/pts/0>, "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\272\320\276\320\274\320\260\320\275\320\264\321\213:\n", 35) = 35
+50047 write(1</dev/pts/0>, "1       - \320\276\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\204\320\260\320\271\320\273 \321\201 \321\203\320\277\320\276\321\200\321\217\320\264\320\276\321\207\320\265\320\275\320\275\321\213\320\274\320\270 \321\215\320\273\320\265\320\274\320\265\320\275\321\202\320\260\320\274\320\270\n", 99) = 99
+50047 write(1</dev/pts/0>, "2       - \320\276\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\204\320\260\320\271\320\273 \321\201 \321\215\320\273\320\265\320\274\320\265\320\275\321\202\320\260\320\274\320\270 \320\262 \320\276\320\261\321\200\320\260\321\202\320\275\320\276\320\274 \320\277\320\276\321\200\321\217\320\264\320\272\320\265\n", 105) = 105
+50047 write(1</dev/pts/0>, "3       - \320\276\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\204\320\260\320\271\320\273 \321\201 \320\275\320\265\321\203\320\277\320\276\321\200\321\217\320\264\320\276\321\207\320\265\320\275\320\275\321\213\320\274\320\270 \321\215\320\273\320\265\320\274\320\265\320\275\321\202\320\260\320\274\320\270\n", 103) = 103
+50047 write(1</dev/pts/0>, "4 <key> - \320\275\320\260\320\271\321\202\320\270 \320\267\320\275\320\260\321\207\320\265\320\275\320\270\320\265 \320\277\320\276 \320\272\320\273\321\216\321\207\321\203 (\321\201\320\275\320\260\321\207\320\260\320\273\320\260 \320\275\320\260\320\264\320\276 \320\262\321\213\320\277\320\276\320\273\320\275\320\270\321\202\321\214 \320\272\320\276\320\274\320\260\320\275\320\264\321\203 1-3)\n", 118) = 118
+50047 write(1</dev/pts/0>, "5       - \320\262\321\213\321\205\320\276\320\264\n", 21) = 21
+50047 fstat(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/cmd.txt>, {st_mode=S_IFREG|0644, st_size=10, ...}) = 0
+50047 read(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/cmd.txt>, "3\n4 100\n5\n", 4096) = 10
+50047 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts>, "text_files/random_order.txt", O_RDONLY) = 3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>
+50047 fstat(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, {st_mode=S_IFREG|0644, st_size=116, ...}) = 0
+50047 read(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, "11\n4\nvalue 4\n8\nvalue 8\n1\nvalue 1\n10\nvalue 10\n6\nvalue 6\n2\nvalue 2\n11\nvalue 11\n7\nvalue 7\n3\nvalue 3\n9\nvalue 9\n5\nvalue 5", 4096) = 116
+50047 lseek(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, 0, SEEK_CUR) = 116
+50047 lseek(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, 2, SEEK_SET) = 2
+50047 close(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>) = 0
+50047 openat(AT_FDCWD</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts>, "text_files/random_order.txt", O_RDONLY) = 3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>
+50047 fstat(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, {st_mode=S_IFREG|0644, st_size=116, ...}) = 0
+50047 read(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, "11\n4\nvalue 4\n8\nvalue 8\n1\nvalue 1\n10\nvalue 10\n6\nvalue 6\n2\nvalue 2\n11\nvalue 11\n7\nvalue 7\n3\nvalue 3\n9\nvalue 9\n5\nvalue 5", 4096) = 116
+50047 read(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>, "", 4096) = 0
+50047 write(1</dev/pts/0>, "> \320\230\321\201\321\205\320\276\320\264\320\275\321\213\320\271 \320\274\320\260\321\201\321\201\320\270\320\262:\n", 33) = 33
+50047 write(1</dev/pts/0>, "4  |  value 4\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "8  |  value 8\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "1  |  value 1\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "10  |  value 10\n", 16) = 16
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "6  |  value 6\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "2  |  value 2\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "11  |  value 11\n", 16) = 16
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "7  |  value 7\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "3  |  value 3\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "9  |  value 9\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "5  |  value 5\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "\320\236\321\202\321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\271 \320\274\320\260\321\201\321\201\320\270\320\262:\n", 45) = 45
+50047 write(1</dev/pts/0>, "1  |  value 1\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "2  |  value 2\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "3  |  value 3\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "4  |  value 4\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "5  |  value 5\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "6  |  value 6\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "7  |  value 7\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "8  |  value 8\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "9  |  value 9\n", 14) = 14
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "10  |  value 10\n", 16) = 16
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 write(1</dev/pts/0>, "11  |  value 11\n", 16) = 16
+50047 write(1</dev/pts/0>, "----------------\n", 17) = 17
+50047 close(3</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/text_files/random_order.txt>) = 0
+50047 write(1</dev/pts/0>, "> \320\255\320\273\320\265\320\274\320\265\320\275\321\202 \321\201 \320\272\320\273\321\216\321\207\320\276\320\274 100 \320\275\320\265 \320\275\320\260\320\271\320\264\320\265\320\275\n", 55) = 55
+50047 write(1</dev/pts/0>, "> \320\222\321\213\321\205\320\276\320\264.\n", 14) = 14
+50047 lseek(0</home/katya/PycharmProjects/laboratory_works_asd_2_sem/2_lab_sorts/cmd.txt>, -1, SEEK_CUR) = 9
+50047 exit_group(0)                     = ?
+50047 +++ exited with 0 +++
