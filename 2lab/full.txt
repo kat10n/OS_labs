@@ -1,0 +1,141 @@
+10666 execve("./parent", ["./parent"], 0x7ffe61692238 /* 54 vars */) = 0
+10666 brk(NULL)                         = 0x2cd76000
+10666 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+10666 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+10666 fstat(3, {st_mode=S_IFREG|0644, st_size=83719, ...}) = 0
+10666 mmap(NULL, 83719, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2e84222000
+10666 close(3)                          = 0
+10666 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+10666 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0"..., 832) = 832
+10666 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+10666 fstat(3, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+10666 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2e84220000
+10666 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+10666 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2e84027000
+10666 mmap(0x7f2e84199000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7f2e84199000
+10666 mmap(0x7f2e84212000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1eb000) = 0x7f2e84212000
+10666 mmap(0x7f2e84218000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2e84218000
+10666 close(3)                          = 0
+10666 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2e84024000
+10666 arch_prctl(ARCH_SET_FS, 0x7f2e84024740) = 0
+10666 set_tid_address(0x7f2e84024d68)   = 10666
+10666 set_robust_list(0x7f2e84024a20, 24) = 0
+10666 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+10666 mprotect(0x7f2e84212000, 16384, PROT_READ) = 0
+10666 mprotect(0x402000, 4096, PROT_READ) = 0
+10666 mprotect(0x7f2e84276000, 8192, PROT_READ) = 0
+10666 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+10666 getrandom("\x7f\x51\xf6\x03\x8d\x27\xb5\x21", 8, GRND_NONBLOCK) = 8
+10666 munmap(0x7f2e84222000, 83719)     = 0
+10666 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f2e84040fb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+10666 getpid()                          = 10666
+10666 fstat(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+10666 brk(NULL)                         = 0x2cd76000
+10666 brk(0x2cd97000)                   = 0x2cd97000
+10666 write(1, "[parent 10666] \320\270\320\274\321\217 \321\204\320\260\320\271\320\273\320\260"..., 34) = 34
+10666 fstat(0, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+10666 read(0, "test2\n", 1024)          = 6
+10666 pipe2([3, 4], 0)                  = 0
+10666 pipe2([5, 6], 0)                  = 0
+10666 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+10666 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f2e84024a10) = 10670
+10670 set_robust_list(0x7f2e84024a20, 24 <unfinished ...>
+10666 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+10670 <... set_robust_list resumed>)    = 0
+10666 <... rt_sigprocmask resumed>, NULL, 8) = 0
+10666 close(3)                          = 0
+10666 close(6 <unfinished ...>
+10670 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+10666 <... close resumed>)              = 0
+10666 getpid()                          = 10666
+10666 write(1, "[parent 10666] \320\267\320\260\320\277\321\203\321\211\320\265\320\275 ch"..., 42 <unfinished ...>
+10670 <... rt_sigprocmask resumed>, NULL, 8) = 0
+10666 <... write resumed>)              = 42
+10666 read(0 <unfinished ...>
+10670 dup2(3, 0)                        = 0
+10670 dup2(6, 1)                        = 1
+10670 close(3)                          = 0
+10670 close(4)                          = 0
+10670 close(5)                          = 0
+10670 close(6)                          = 0
+10670 execve("./child", ["child", "test2"], 0x7fff29274c78 /* 54 vars */) = 0
+10670 brk(NULL)                         = 0x2abb2000
+10670 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+10670 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+10670 fstat(3, {st_mode=S_IFREG|0644, st_size=83719, ...}) = 0
+10670 mmap(NULL, 83719, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f284a17a000
+10670 close(3)                          = 0
+10670 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+10670 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2408\0\0\0\0\0\0"..., 832) = 832
+10670 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+10670 fstat(3, {st_mode=S_IFREG|0755, st_size=2482096, ...}) = 0
+10670 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f284a178000
+10670 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+10670 mmap(NULL, 2067312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2849f7f000
+10670 mmap(0x7f284a0f1000, 495616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7f284a0f1000
+10670 mmap(0x7f284a16a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1eb000) = 0x7f284a16a000
+10670 mmap(0x7f284a170000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f284a170000
+10670 close(3)                          = 0
+10670 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2849f7c000
+10670 arch_prctl(ARCH_SET_FS, 0x7f2849f7c740) = 0
+10670 set_tid_address(0x7f2849f7cd68)   = 10670
+10670 set_robust_list(0x7f2849f7ca20, 24) = 0
+10670 rseq({cpu_id_start=0, cpu_id=RSEQ_CPU_ID_UNINITIALIZED, rseq_cs=NULL, flags=0, node_id=0, mm_cid=0, slice_ctrl={request=0, granted=0, __reserved=0}, __reserved=0}, 33, 0, 0x53053053) = 0
+10670 mprotect(0x7f284a16a000, 16384, PROT_READ) = 0
+10670 mprotect(0x402000, 4096, PROT_READ) = 0
+10670 mprotect(0x7f284a1ce000, 8192, PROT_READ) = 0
+10670 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+10670 getrandom("\xab\x90\x31\x0c\xb0\x9c\x26\xe4", 8, GRND_NONBLOCK) = 8
+10670 munmap(0x7f284a17a000, 83719)     = 0
+10670 openat(AT_FDCWD, "test2", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 3
+10670 getppid()                         = 10666
+10670 getpid()                          = 10670
+10670 write(2, "[child 10670] \321\201\321\202\320\260\321\200\321\202, parent"..., 39) = 39
+10670 brk(NULL)                         = 0x2abb2000
+10670 brk(0x2abd3000)                   = 0x2abd3000
+10670 fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+10670 read(0 <unfinished ...>
+10666 <... read resumed>, "100 5 2\n", 1024) = 8
+10666 write(4, "100 5 2\n", 8)          = 8
+10670 <... read resumed>, "100 5 2\n", 4096) = 8
+10666 read(5 <unfinished ...>
+10670 write(3, "10\n", 3)               = 3
+10670 write(1, "O", 1)                  = 1
+10666 <... read resumed>, "O", 1)       = 1
+10666 write(1, "ok\n", 3 <unfinished ...>
+10670 read(0 <unfinished ...>
+10666 <... write resumed>)              = 3
+10666 read(0, "10 abc\n", 1024)         = 7
+10666 write(4, "10 abc\n", 7)           = 7
+10670 <... read resumed>, "10 abc\n", 4096) = 7
+10666 read(5 <unfinished ...>
+10670 write(1, "E", 1 <unfinished ...>
+10666 <... read resumed>, "E", 1)       = 1
+10670 <... write resumed>)              = 1
+10670 read(0 <unfinished ...>
+10666 write(1, "\320\275\320\265\320\272\320\276\321\200\321\200\320\265\320\272\321\202\320\275\320\260\321\217 \321\201\321\202\321\200\320"..., 38) = 38
+10666 read(0, "7 0\n", 1024)            = 4
+10666 write(4, "7 0\n", 4)              = 4
+10666 read(5 <unfinished ...>
+10670 <... read resumed>, "7 0\n", 4096) = 4
+10670 write(1, "Z", 1)                  = 1
+10666 <... read resumed>, "Z", 1)       = 1
+10670 close(3)                          = 0
+10666 getpid( <unfinished ...>
+10670 getpid()                          = 10670
+10670 write(2, "[child 10670] \320\262\321\213\321\205\320\276\320\264\n", 25) = 25
+10666 <... getpid resumed>)             = 10666
+10670 exit_group(0 <unfinished ...>
+10666 write(1, "[parent 10666] \320\264\320\265\320\273\320\265\320\275\320\270\320\265 \320\275"..., 49 <unfinished ...>
+10670 <... exit_group resumed>)         = ?
+10666 <... write resumed>)              = 49
+10666 close(4)                          = 0
+10666 close(5)                          = 0
+10666 wait4(10670 <unfinished ...>
+10670 +++ exited with 0 +++
+10666 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 10670
+10666 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10670, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10666 getpid()                          = 10666
+10666 write(1, "[parent 10666] child 10670 \320\267\320\260\320"..., 58) = 58
+10666 exit_group(0)                     = ?
+10666 +++ exited with 0 +++
